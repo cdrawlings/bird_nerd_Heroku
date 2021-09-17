@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="" />
+    <list id="6fff1d82-b51f-4a18-8f6a-8a911a288d8d" name="Default Changelist" comment="uodated port" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1h3W2Z3GYBL3zEHFbF3WJs64Ssw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.2" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.20.19" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/layouts" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/layouts" />
+      <recent name="$USER_HOME$/Downloads" />
+      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/views/partials" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/HOLD" />
+      <recent name="$PROJECT_DIR$/public/data" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public/js" />
+      <recent name="$PROJECT_DIR$/public/js/weather" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="Default" summary="Default task">
+      <changelist id="6fff1d82-b51f-4a18-8f6a-8a911a288d8d" name="Default Changelist" comment="" />
+      <created>1599240049488</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631907839776</updated>
+      <workItem from="1599240050585" duration="2706000" />
+      <workItem from="1599243304540" duration="13914000" />
+      <workItem from="1599402408128" duration="959000" />
+      <workItem from="1599487016600" duration="11734000" />
+      <workItem from="1599575380762" duration="12247000" />
+      <workItem from="1599841901255" duration="7499000" />
+      <workItem from="1599922235448" duration="10426000" />
+      <workItem from="1600004955728" duration="2506000" />
+      <workItem from="1600954548782" duration="5618000" />
+      <workItem from="1601916499588" duration="13326000" />
+      <workItem from="1602090232597" duration="1252000" />
+      <workItem from="1602253202613" duration="1779000" />
+      <workItem from="1602257286357" duration="7109000" />
+      <workItem from="1602348208798" duration="28586000" />
+      <workItem from="1602856908918" duration="12162000" />
+      <workItem from="1602950551339" duration="6906000" />
+      <workItem from="1603030609661" duration="7878000" />
+      <workItem from="1603113295107" duration="27838000" />
+      <workItem from="1603299909126" duration="2005000" />
+      <workItem from="1603303695098" duration="1242000" />
+      <workItem from="1603309130588" duration="211000" />
+      <workItem from="1603372664965" duration="4765000" />
+      <workItem from="1603380180730" duration="6137000" />
+      <workItem from="1603553327829" duration="313000" />
+      <workItem from="1603563928823" duration="3493000" />
+      <workItem from="1603634365290" duration="11768000" />
+      <workItem from="1603725328495" duration="16506000" />
+      <workItem from="1603918204822" duration="120000" />
+      <workItem from="1603982425350" duration="33305000" />
+      <workItem from="1604688885887" duration="153000" />
+      <workItem from="1605022608825" duration="506000" />
+      <workItem from="1605107765178" duration="674000" />
+      <workItem from="1607449767314" duration="45000" />
+      <workItem from="1607787717851" duration="4688000" />
+      <workItem from="1607961001175" duration="11720000" />
+      <workItem from="1607988866098" duration="165000" />
+      <workItem from="1608131931703" duration="1210000" />
+      <workItem from="1608220520277" duration="1398000" />
+      <workItem from="1608493392432" duration="2204000" />
+      <workItem from="1608496117142" duration="8188000" />
+      <workItem from="1608652066911" duration="4791000" />
+      <workItem from="1608734088983" duration="739000" />
+      <workItem from="1610726386095" duration="159000" />
+      <workItem from="1610732122051" duration="1382000" />
+      <workItem from="1610900822851" duration="324000" />
+      <workItem from="1610902129992" duration="25000" />
+      <workItem from="1610903532488" duration="56000" />
+      <workItem from="1610982848073" duration="7810000" />
+      <workItem from="1611068963765" duration="843000" />
+      <workItem from="1611069963085" duration="1742000" />
+      <workItem from="1611243092403" duration="7314000" />
+      <workItem from="1611331123867" duration="5910000" />
+      <workItem from="1611342818686" duration="2799000" />
+      <workItem from="1611513979542" duration="2365000" />
+      <workItem from="1611589135077" duration="167000" />
+      <workItem from="1611589419203" duration="3425000" />
+      <workItem from="1611593418573" duration="8465000" />
+      <workItem from="1611604583694" duration="13000" />
+      <workItem from="1611604806952" duration="273000" />
+      <workItem from="1611605092509" duration="1777000" />
+      <workItem from="1611757504600" duration="1136000" />
+      <workItem from="1611759584977" duration="4670000" />
+      <workItem from="1611765483112" duration="8237000" />
+      <workItem from="1611778313072" duration="16000" />
+      <workItem from="1611843560303" duration="118000" />
+      <workItem from="1611843746909" duration="891000" />
+      <workItem from="1611845271370" duration="14472000" />
+      <workItem from="1611946348447" duration="380000" />
+      <workItem from="1611947311731" duration="79000" />
+      <workItem from="1611947482608" duration="4052000" />
+      <workItem from="1612016611970" duration="8607000" />
+      <workItem from="1612111782612" duration="4600000" />
+      <workItem from="1612120746735" duration="312000" />
+      <workItem from="1612121062898" duration="67000" />
+      <workItem from="1612121165597" duration="5466000" />
+      <workItem from="1612204177537" duration="2745000" />
+      <workItem from="1612541241461" duration="9335000" />
+      <workItem from="1612555918590" duration="1087000" />
+      <workItem from="1612636151118" duration="1091000" />
+      <workItem from="1612710959663" duration="10009000" />
+      <workItem from="1612730728958" duration="3146000" />
+      <workItem from="1612793469292" duration="617000" />
+      <workItem from="1612802116446" duration="131000" />
+      <workItem from="1612881812169" duration="2422000" />
+      <workItem from="1612885162818" duration="601000" />
+      <workItem from="1612886194493" duration="689000" />
+      <workItem from="1612887256481" duration="1337000" />
+      <workItem from="1612888743000" duration="2901000" />
+      <workItem from="1612895265547" duration="7023000" />
+      <workItem from="1612966400174" duration="408000" />
+      <workItem from="1612970276473" duration="5306000" />
+      <workItem from="1612976649874" duration="757000" />
+      <workItem from="1613058550712" duration="123000" />
+      <workItem from="1613059082068" duration="7231000" />
+      <workItem from="1613072925828" duration="1604000" />
+      <workItem from="1613142353957" duration="7530000" />
+      <workItem from="1613226446263" duration="241000" />
+      <workItem from="1613246709197" duration="145000" />
+      <workItem from="1613250450667" duration="4173000" />
+      <workItem from="1613318954730" duration="86000" />
+      <workItem from="1613319065206" duration="14000" />
+      <workItem from="1613319576368" duration="434000" />
+      <workItem from="1613320565454" duration="528000" />
+      <workItem from="1613327446878" duration="18000" />
+      <workItem from="1613405975819" duration="1454000" />
+      <workItem from="1613410050702" duration="2997000" />
+      <workItem from="1613419756308" duration="6000" />
+      <workItem from="1613419787401" duration="1355000" />
+      <workItem from="1613421180790" duration="3090000" />
+      <workItem from="1613573368993" duration="1819000" />
+      <workItem from="1613661583556" duration="1425000" />
+      <workItem from="1613663695341" duration="8000" />
+      <workItem from="1613672246515" duration="1720000" />
+      <workItem from="1613750014062" duration="337000" />
+      <workItem from="1614017454220" duration="444000" />
+      <workItem from="1614018318028" duration="456000" />
+      <workItem from="1614020672641" duration="5000" />
+      <workItem from="1614020771349" duration="20000" />
+      <workItem from="1614020875790" duration="30000" />
+      <workItem from="1614023317848" duration="73000" />
+      <workItem from="1614110727717" duration="665000" />
+      <workItem from="1614177718378" duration="223000" />
+      <workItem from="1615747271372" duration="730000" />
+      <workItem from="1616702119171" duration="62000" />
+      <workItem from="1616775543628" duration="579000" />
+      <workItem from="1616781104952" duration="5000" />
+      <workItem from="1617891186542" duration="19000" />
+      <workItem from="1619878910001" duration="42000" />
+      <workItem from="1620066807331" duration="11000" />
+      <workItem from="1620067430858" duration="611000" />
+      <workItem from="1629039894369" duration="377000" />
+      <workItem from="1629123139408" duration="5851000" />
+      <workItem from="1629136613579" duration="1495000" />
+      <workItem from="1629211402163" duration="2052000" />
+      <workItem from="1629493437801" duration="19000" />
+      <workItem from="1629493606353" duration="47000" />
+      <workItem from="1629725928348" duration="530000" />
+      <workItem from="1629736199604" duration="125000" />
+      <workItem from="1629736470872" duration="582000" />
+      <workItem from="1629737076694" duration="46000" />
+      <workItem from="1629737544160" duration="6773000" />
+      <workItem from="1629906968015" duration="4197000" />
+      <workItem from="1629913313771" duration="1829000" />
+      <workItem from="1630071864035" duration="4721000" />
+      <workItem from="1630166992331" duration="2536000" />
+      <workItem from="1630418071682" duration="18968000" />
+      <workItem from="1630681390622" duration="570000" />
+      <workItem from="1631034090788" duration="4893000" />
+      <workItem from="1631204792037" duration="4036000" />
+      <workItem from="1631210670266" duration="64000" />
+      <workItem from="1631210777648" duration="178000" />
+      <workItem from="1631210995938" duration="69000" />
+      <workItem from="1631211429329" duration="2027000" />
+      <workItem from="1631217620620" duration="46000" />
+      <workItem from="1631218964272" duration="46000" />
+      <workItem from="1631219594130" duration="512000" />
+      <workItem from="1631220149216" duration="244000" />
+      <workItem from="1631220792627" duration="429000" />
+      <workItem from="1631221324890" duration="1630000" />
+      <workItem from="1631368413433" duration="1081000" />
+      <workItem from="1631470594741" duration="46130000" />
+      <workItem from="1631802207303" duration="1692000" />
+      <workItem from="1631899981040" duration="5179000" />
+    </task>
+    <task id="LOCAL-00001" summary="Ready to change for bird nerd">
+      <created>1599404313855</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599404313855</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Modal updated">
+      <created>1600875257690</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600875257690</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding count to DB">
+      <created>1600963446373</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1600963446373</updated>
+    </task>
+    <task id="LOCAL-00004" summary="list of seen and unssen birds created">
+      <created>1601919109941</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601919109941</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Modal updating number">
+      <created>1601999459039</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601999459039</updated>
+    </task>
+    <task id="LOCAL-00006" summary="App working adding chart">
+      <created>1602350419606</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602350419606</updated>
+    </task>
+    <task id="LOCAL-00007" summary="adding second passport strategy">
+      <created>1602681481477</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602681481477</updated>
+    </task>
+    <task id="LOCAL-00008" summary="local sign in added to log in process">
+      <created>1602950638415</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602950638415</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Some CSS added, add bird finished">
+      <created>1603126599036</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603126599036</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Adding bird count fuuly works">
+      <created>1603387304789</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603387304789</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Ad bird from session working">
+      <created>1604241468800</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604241468800</updated>
+    </task>
+    <task id="LOCAL-00012" summary="dashboard css and clean up">
+      <created>1611776526351</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1611776526352</updated>
+    </task>
+    <task id="LOCAL-00013" summary="dashboard and session page updated for CSS now last session getting all items last session fixing">
+      <created>1612025074337</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1612025074337</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Dashboard fixed, Last birds seen fixed to know only get last session. Session Pages need updating as well as add bired seesion.`">
+      <created>1612207973318</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1612207973318</updated>
+    </task>
+    <task id="LOCAL-00015" summary="All functions done xcept seen bird fro all bird list">
+      <created>1613072210250</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1613072210250</updated>
+    </task>
+    <task id="LOCAL-00016" summary="about to transfer">
+      <created>1629738971560</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1629738971560</updated>
+    </task>
+    <task id="LOCAL-00017" summary="mpbile css done">
+      <created>1630418441839</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1630418441839</updated>
+    </task>
+    <task id="LOCAL-00018" summary="mpbile css done session">
+      <created>1630504186270</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1630504186270</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Dashboaerd CSS DOne">
+      <created>1631208837431</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1631208837431</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add birds just neef JS css updated">
+      <created>1631543112835</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1631543112836</updated>
+    </task>
+    <task id="LOCAL-00021" summary="session updated">
+      <created>1631632744521</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1631632744521</updated>
+    </task>
+    <task id="LOCAL-00022" summary="css done Nav bar done">
+      <created>1631718833414</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1631718833414</updated>
+    </task>
+    <task id="LOCAL-00023" summary="ready to upload">
+      <created>1631802230808</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1631802230808</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Update package.json for hroku">
+      <created>1631902658859</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1631902658859</updated>
+    </task>
+    <task id="LOCAL-00025" summary="new port">
+      <created>1631903186316</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1631903186316</updated>
+    </task>
+    <task id="LOCAL-00026" summary="updated Procfile">
+      <created>1631904220891</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1631904220891</updated>
+    </task>
+    <task id="LOCAL-00027" summary="uodated package.json">
+      <created>1631904616980</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1631904616980</updated>
+    </task>
+    <task id="LOCAL-00028" summary="uodated port">
+      <created>1631905531402</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1631905531402</updated>
+    </task>
+    <task active="true" id="LOCAL-00029" summary="New changelist">
+      <changelist id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="" />
+      <created>1631907839762</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1631907839776</updated>
+      <workItem from="1631907839821" duration="120000" />
+    </task>
+    <option name="localTasksCounter" value="30" />
+    <option name="trackContextForNewChangelist" value="true" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="adding second passport strategy" />
+    <MESSAGE value="local sign in added to log in process" />
+    <MESSAGE value="Some CSS added, add bird finished" />
+    <MESSAGE value="Adding bird count fuuly works" />
+    <MESSAGE value="Ad bird from session working" />
+    <MESSAGE value="dashboard css and clean up" />
+    <MESSAGE value="dashboard and session page updated for CSS now last session getting all items last session fixing" />
+    <MESSAGE value="Dashboard fixed, Last birds seen fixed to know only get last session. Session Pages need updating as well as add bired seesion.`" />
+    <MESSAGE value="All functions done xcept seen bird fro all bird list" />
+    <MESSAGE value="about to transfer" />
+    <MESSAGE value="mpbile css done" />
+    <MESSAGE value="mpbile css done session" />
+    <MESSAGE value="Dashboaerd CSS DOne" />
+    <MESSAGE value="Add birds just neef JS css updated" />
+    <MESSAGE value="Add birds done" />
+    <MESSAGE value="session updated" />
+    <MESSAGE value="Updating birds done" />
+    <MESSAGE value="css done Nav bar done" />
+    <MESSAGE value="css done Nav bar done 2" />
+    <MESSAGE value="ready to upload" />
+    <MESSAGE value="Update package.json for hroku" />
+    <MESSAGE value="new port" />
+    <MESSAGE value="updated Procfile" />
+    <MESSAGE value="uodated package.json" />
+    <MESSAGE value="uodated port" />
+    <option name="LAST_COMMIT_MESSAGE" value="uodated port" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

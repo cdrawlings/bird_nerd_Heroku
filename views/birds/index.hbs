@@ -1,0 +1,22 @@
+<div class="container spotted">
+
+    <h3>Birds that you have spotted.</h3>
+    {{#if birds}}
+        <ul>
+            {{#each birds}}
+                <li class="spot-list">
+                    <div class="all-bird-list">
+                        <a href="https://ebird.org/species/{{speciesCode}}/us" class="bird-name">{{comName}}</a>
+
+
+                    </div>
+                </li>
+            {{/each}}
+        </ul>
+    {{else}}
+        <p>You have not spotted any birds</p>
+    {{/if}}
+
+</div>
+
+<script src="../../public/js/weather.js"></script>

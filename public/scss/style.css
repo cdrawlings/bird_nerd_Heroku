@@ -1,0 +1,746 @@
+/* brand title and Home button */
+/*
+--CSS HEX
+--jet: #343330ff;
+--rifle-green: #45462aff;
+--moss-green: #809848ff;
+--midnight-green-eagle-green: #014750ff;
+
+---- CSS HSL
+--jet: hsla(45, 4%, 20%, 1);
+--rifle-green: hsla(62, 25%, 22%, 1);
+--moss-green: hsla(78, 36%, 44%, 1);
+--midnight-green-eagle-green: hsla(187, 98%, 16%, 1);
+
+---- SCSS HEX
+$jet: #343330ff;
+$rifle-green: #45462aff;
+$moss-green: #809848ff;
+$midnight-green-eagle-green: #014750ff;
+
+---- SCSS HSL
+$jet: hsla(45, 4%, 20%, 1);
+$rifle-green: hsla(62, 25%, 22%, 1);
+$moss-green: hsla(78, 36%, 44%, 1);
+$midnight-green-eagle-green: hsla(187, 98%, 16%, 1);
+
+---- SCSS RGB
+$jet: rgba(52, 51, 48, 1);
+$rifle-green: rgba(69, 70, 42, 1);
+$moss-green: rgba(128, 152, 72, 1);
+$midnight-green-eagle-green: rgba(1, 71, 80, 1);
+
+---- SCSS Gradient
+$gradient-top: linear-gradient(0deg, #343330ff, #45462aff, #809848ff, #014750ff);
+$gradient-right: linear-gradient(90deg, #343330ff, #45462aff, #809848ff, #014750ff);
+$gradient-bottom: linear-gradient(180deg, #343330ff, #45462aff, #809848ff, #014750ff);
+$gradient-left: linear-gradient(270deg, #343330ff, #45462aff, #809848ff, #014750ff);
+$gradient-top-right: linear-gradient(45deg, #343330ff, #45462aff, #809848ff, #014750ff);
+$gradient-bottom-right: linear-gradient(135deg, #343330ff, #45462aff, #809848ff, #014750ff);
+$gradient-top-left: linear-gradient(225deg, #343330ff, #45462aff, #809848ff, #014750ff);
+$gradient-bottom-left: linear-gradient(315deg, #343330ff, #45462aff, #809848ff, #014750ff);
+$gradient-radial: radial-gradient(#343330ff, #45462aff, #809848ff, #014750ff);
+    */
+.wthr-cord, .wthr-info, .wthr-city {
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+.wthr-city {
+    font-weight: 900;
+}
+
+.wthr-info {
+    font-weight: 600;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.wthr-cord {
+    font-weight: 600;
+    display: none;
+}
+
+.wthr-icon {
+    width: 40px;
+    height: 40px;
+    color: #fffcf9;
+    margin-bottom: 2px;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+}
+
+.wthr-bar {
+    background-color: #8f000eff;
+    padding: 2px 0 8px;
+    width: 100%;
+}
+
+.nav-bar-clr {
+    background-color: #2e294eff;
+    height: 3rem;
+    color: #fffcf9;
+}
+
+.nav-bar-clr a {
+    color: #fffcf9;
+}
+
+.nav-bar-clr a:visited {
+    color: yellow;
+}
+
+.nav-bar-clr a:hover {
+    color: red;
+}
+
+.nav-bar-clr a:active {
+    color: orange;
+}
+
+.brand-text {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.card__login {
+    width: 90vw;
+    margin: 7vh auto 0;
+    box-shadow: 0 0 15px 0 #000;
+    z-index: 2;
+    display: flex;
+}
+
+.btn, .btn__google, .btn__login {
+    margin: 3vh auto 0;
+    padding: 2px 10px;
+    border: 1px solid;
+    font-size: 1rem;
+    color: #081a21ff;
+    font-weight: 600;
+}
+
+.btn__login {
+    border-color: #081a21ff;
+    background-color: blue;
+    width: 15rem;
+}
+
+.btn__login:hover {
+    background-color: #081a21ff;
+    color: #fff;
+}
+
+.btn__google {
+    border-color: white;
+    background-color: white;
+    text-align: center;
+}
+
+.btn__google:hover {
+    background-color: #081a21ff;
+    color: #fff;
+}
+
+.login-bckgrnd {
+    position: fixed;
+    background: yellow;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+.form__login {
+    display: flex;
+    flex-direction: column;
+}
+
+.reg__headline {
+    margin: 10vh 0 0;
+    color: red;
+    font-size: 1rem;
+}
+
+.adds {
+    display: flex;
+    align-content: center;
+}
+
+#bird-list {
+    display: none;
+}
+
+#show-list {
+    display: none;
+}
+
+.spotted-birdsU {
+    width: 300px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spotted-birds {
+    width: 300px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #333;
+    /* old IE */
+    background-color: #333;
+    /* Modern Browsers */
+}
+
+.sp-name {
+    width: 300px;
+}
+
+.name-box {
+    display: flex;
+    width: 600px;
+}
+
+.watch-list {
+    display: flex;
+    align-items: center;
+}
+
+.watch-list a:link {
+    text-decoration: none;
+    color: #081a21ff;
+}
+
+.watch-list a:hover {
+    text-decoration: none;
+    font-weight: 800;
+    color: #333;
+}
+
+.bird-name {
+    width: 300px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-vert {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-nospace {
+    display: flex;
+}
+
+.birdlist {
+    border: 0;
+    padding: 8px;
+}
+
+.input-box {
+    width: 3rem;
+    text-align: center;
+    padding: 3px;
+}
+
+.input-no-box {
+    border: 0;
+    overflow: visible;
+}
+
+.sub-btn, .bird-btn-box, .bird-btn-start, .bird-btn-sub, .bird-btn-addlist, .bird-btn-add, .bird-btn-sm {
+    color: #2e294eff;
+    font-weight: 600;
+    margin: 0 3px 3px 0;
+    border: none;
+    font-size: 1rem;
+}
+
+.sub-btn:hover, .bird-btn-box:hover, .bird-btn-start:hover, .bird-btn-sub:hover, .bird-btn-addlist:hover, .bird-btn-add:hover, .bird-btn-sm:hover {
+    color: #fff;
+}
+
+.bird-btn-sm {
+    border: thin solid #aca6d0;
+    padding: 1px 15px;
+    border-radius: 5px;
+}
+
+.bird-btn-add {
+    padding: 1px 10px;
+}
+
+.bird-btn-addlist {
+    background-color: white;
+    padding: 3px 15px;
+}
+
+.bird-btn-sub {
+    background-color: #fcba04ff;
+    padding: 1px 10px;
+}
+
+.bird-btn-start {
+    background-color: #eae9f3;
+    padding: 10px 20px;
+    width: 200px;
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.bird-btn-box {
+    width: 75px;
+    font-size: 0.8rem;
+}
+
+.sub-btn {
+    background-color: #yellow;
+    padding: 5px 7px;
+    border: 0;
+    font-size: 0.9rem;
+    margin-right: 20px;
+}
+
+.sub-btn:hover {
+    background-color: #333;
+    padding: 5px 7px;
+    border: 0;
+}
+
+.modal-header {
+    background-color: #8f000eff;
+    color: #ffffff;
+}
+
+.close {
+    color: #ff8f9a;
+    opacity: 1;
+    text-shadow: 0 1px 0 #333333;
+}
+
+.close:hover {
+    color: #fcba04ff;
+    opacity: 1;
+}
+
+.modal-b {
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.search-box {
+    display: flex;
+    align-items: flex-end;
+}
+
+.fa-plus-circle {
+    font-size: 1.5rem;
+    color: #8f000eff;
+    vertical-align: center;
+    padding-top: 2px;
+}
+
+.fa-plus-circle:hover {
+    color: #333;
+}
+
+.search-bar {
+    width: 200px;
+    margin-right: 40px;
+}
+
+.btn-primary {
+    background-color: #2e294eff;
+}
+
+.add-b {
+    background-color: #8f000eff;
+    position: absolute;
+    height: 25vh;
+}
+
+.search-bar-container {
+    background-color: white;
+    padding: 5px;
+}
+
+.page {
+    background-color: #fff;
+    height: 100vh;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.hide {
+    display: none;
+}
+
+.loc-info {
+    display: none;
+}
+
+.fa-plus:hover {
+    color: #333;
+}
+
+.spotted {
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 8px 5px;
+}
+
+.spotted ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.all-bird-list {
+    display: flex;
+    border: 0;
+    color: #8f000eff;
+}
+
+.all-bird-list a {
+    color: #8f000eff;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+
+.all-bird-list a:hover {
+    color: #6e7e85;
+    background-color: #ffebed;
+    text-decoration: none;
+}
+
+.all-bird-list a:active {
+    color: orange;
+}
+
+.sess-wrap {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    background-color: #fff;
+}
+
+.full {
+    height: 100%;
+}
+
+.sess-a {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.sess-b {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    padding: 0 8px;
+    margin-top: 10px;
+}
+
+.sess-c {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: left;
+    padding: 12px;
+}
+
+.spotted-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.spotted-list a {
+    color: #081a21ff;
+}
+
+.spotted-list a:link {
+    text-decoration: none;
+}
+
+.spotted-list a:hover {
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.spotted-list a:visited {
+    text-decoration: none;
+    color: #081a21ff;
+}
+
+.bird-bar {
+    background-color: #f50018;
+}
+
+.search-box-bar {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+}
+
+.session-add-btn {
+    padding: 20px 40px;
+    background-color: #ff293e;
+    color: #fffcf9;
+    border-radius: 5px;
+    border: none;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.session-add-btn:hover {
+    text-decoration: none;
+    color: #fffcf9;
+    background-color: #6d63ad;
+}
+
+.session-add-btn a {
+    color: #fffcf9;
+    text-decoration: none;
+}
+
+.sesh-bird {
+    display: flex;
+    list-style: none;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    width: 400px;
+}
+
+.list-box {
+    border: 0;
+    padding: 2px 10px;
+}
+
+.reg {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.google {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.dash__intro {
+    margin: 5vh 0 0;
+}
+
+.dash__cond {
+    margin: 0;
+}
+
+.dash__start {
+    margin: 5vh 0 0;
+}
+
+.weather__info--icon {
+    width: 75px;
+}
+
+.weather__info--temp {
+    font-weight: 500;
+    font-size: 2rem;
+    color: rgba(46, 41, 78, 0.6);
+    padding-top: 20px;
+}
+
+.weather__info {
+    font-weight: 600;
+    margin: 3vh 0 0;
+}
+
+.page-content {
+    height: 100%;
+    background-color: #fff;
+    padding: 20px 10px 20px;
+    -webkit-box-shadow: 0 0 6px 0 rgba(46, 41, 78, 0.3);
+    -moz-box-shadow: 0 0 6px 0 rgba(46, 41, 78, 0.3);
+    box-shadow: 0 0 6px 0 rgba(46, 41, 78, 0.3);
+    position: relative;
+}
+
+.b-line {
+    background-color: rgba(46, 41, 78, 0.1);
+    border-radius: 15px 15px 0 0;
+    padding: 8px 8px 0 8px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HISTORICAL LINE CHART */
+/* ticks */
+.axis line {
+    stroke: #706f6f;
+    stroke-width: 0.5;
+    shape-rendering: crispEdges;
+}
+
+/* axis contour */
+.axis path {
+    stroke: #706f6f;
+    stroke-width: 0.7;
+    shape-rendering: crispEdges;
+}
+
+/* axis text */
+.axis text {
+    fill: #2b2929;
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    font-size: 1.3rem;
+}
+
+/* LINE CHART */
+.line {
+    fill: none;
+    stroke: #d2d2d2;
+}
+
+.ghost-line {
+    fill: none;
+    stroke: #d2d2d2;
+    opacity: 0;
+    stroke-width: 10;
+}
+
+.serie_label {
+    fill: #d2d2d2;
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    font-size: 80%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+li {
+    text-decoration: none;
+}
+
+.form-inline a {
+    padding: 0 10px;
+}
+
+body {
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    line-height: 1.6rem;
+    color: #081a21ff;
+}
+
+.container {
+    overflow: hidden;
+}
+
+p {
+    margin: 0.8rem 0;
+    color: #081a21ff;
+}
+
+label {
+    margin: 1rem 0 0;
+    padding: 0;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.btn-float {
+    float: left;
+    margin-right: 10px;
+}
+
+.btn-light {
+    background-color: rgba(46, 41, 78, 0.8);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fffcf9;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto 5px;
+}
+
+.right {
+    text-align: right;
+}
+
+.no-border {
+    border: 0;
+    box-shadow: none;
+    /* You may want to include this as bootstrap applies these styles too */
+    height: 1.6rem;
+}
+
+.border-none {
+    border: 0;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.base-color {
+    background-color: #fffcf9;
+    border: none;
+}
+
+.bold {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #8f000eff;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

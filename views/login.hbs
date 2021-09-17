@@ -1,0 +1,52 @@
+<!-- Flash message go here -->
+
+
+{{> _messages }}
+
+<h2>Bird Nerd</h2>
+
+<div class="section">
+    <p class="lead">Keep track of the bird you spot </p>
+</div>
+
+
+<!-- Local Login -->
+
+<form class="form__login" action='/login' method="POST">
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="woody@abc.com"
+        />
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input
+                type="password"
+                id="password"
+                name="password"
+                class="form-control"
+                placeholder="&bull; &bull; &bull; &bull; &bull; &bull;"
+        />
+    </div>
+
+    <button type="submit" class="btn__login">Login</button>
+
+</form>
+
+<div class="lead mt-2 reg">
+    No Account? <a href="/register">Register</a>
+</div>
+
+
+<!-- Google Login -->
+
+<a href="/auth/google">
+    <div class="btn__google">
+        <i class="fab fa-google left"></i> Log In With Google
+    </div>
+</a>

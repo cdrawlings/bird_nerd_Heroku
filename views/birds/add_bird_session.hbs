@@ -1,0 +1,63 @@
+<div class="container">
+
+    <div class="page-content">
+
+        <section class="dup_message">
+            {{#if messages}}
+                <div class="message-error">
+                    {{messages}}
+                </div>
+            {{/if}}
+        </section>
+
+
+        <div id="seshId" class="hide">{{sessionId}}</div>
+
+        <p class="session__text">Add a new bird to your session</p>
+        <p class="session__text--p">Birds seen in {{location.location}} recently</p>
+
+        <section class="search-container">
+            <section class="loc-info">
+                <div id="b-location"> {{location.location}} a</div>
+                <div id="b-longitude"> {{location.longitude}}</div>
+                <div id="b-latitude">{{location.latitude}}</div>
+            </section>
+
+            {{#if message }}
+                <div class="alert alert-{{message.type}}">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <h3>{{message.intro}}</h3>
+                    {{message.message}}
+                </div>
+            {{/if}}
+
+            <div class="search-box">
+                <h5 class="session__text">Search</h5>
+
+
+                <input type="text" id="filterBird" class="form-control search-bar"
+                       placeholder="Bird Name">
+
+
+                <div class="search__full">
+                    <button class="btn__search" id="full-list">Full List</button>
+
+                    <a href="/birds/add_bird_session/{{sessionId}}" class="btn__reset" id="full-list">Reset</button>
+                </div>
+            </div>
+
+
+            <div id="bird-list" class="birdlist"></div>
+
+
+        </section>
+
+
+    </div>
+
+</div>
+
+
+<script src="/js/birdsSeseion.js"></script>
+
+

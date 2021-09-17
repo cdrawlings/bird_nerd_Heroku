@@ -1,0 +1,81 @@
+<div class="container">
+
+    <section class="loc-info row">
+        <div id="b-location"> {{location.location}} a</div>
+        <div id="b-longitude"> {{location.longitude}}</div>
+        <div id="b-latitude">{{location.latitude}}</div>
+    </section>
+
+
+    <section class="dup_message">
+        {{#if messages}}
+            <div class="message-error">
+                {{messages}}
+            </div>
+        {{/if}}
+    </section>
+
+
+    <section>
+        <div class="page-content">
+            <div class="search-container">
+
+                <p class="session__text">Add a new bird to your birds spotted list</p>
+                <p class="session__text--p">Birds seen in {{location.location}} during the last 30 days</p>
+
+                <!-- MAIN SEARCH AREA / BIRD LIST -->
+
+                <!-- FIND BIRD -->
+
+                <p class="session__text">Search</p>
+
+                <div class="search-box">
+
+                    <input type="text" id="filterBird" class="form-control search-bar"
+                           placeholder="Bird Name">
+
+                    <div class="search__full">
+                        <button class="btn__search" id="full-list">Full List</button>
+                        <a href="/birds/add_birds" class="btn__reset" id="reset">Reset</a>
+                    </div>
+                </div>
+
+                <br>
+                <div id="bird-list">
+                    <ul>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRENT BIRD LIST-->
+    <section class="section__seen">
+
+        <span class="session__text">Spotted birds</span>
+
+
+        <div class="spotted">
+
+            {{#if birds}}
+                <ul>
+                    {{#each birds}}
+                        <li class="spot-list">
+                            <div class="all-bird-list">
+                                <a href="https://ebird.org/species/{{speciesCode}}/us"
+                                   class="bird-name">{{comName}}</a>
+                            </div>
+                        </li>
+                    {{/each}}
+                </ul>
+            {{else}}
+                <p>You have not spotted any birds</p>
+            {{/if}}
+        </div>
+    </section>
+</div>
+
+
+<script src="/js/birds.js"></script>

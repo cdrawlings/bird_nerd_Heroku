@@ -1,0 +1,35 @@
+<div class="search-bar-container">
+
+    <div class="container">
+        <section class="loc-info">
+            Location
+            <div id="b-location"> {{location.location}} a</div>
+            <div id="b-longitude"> {{location.longitude}}</div>
+            <div id="b-latitude">{{location.latitude}}</div>
+        </section>
+
+        {{#if message }}
+            <div class="alert alert-{{message.type}}">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <h3>{{message.intro}}</h3>
+                {{message.message}}
+            </div>
+        {{/if}}
+
+        <div class="search-box-bar">
+            <input type="text" id="filterBird" class="form-control-sm search-bar input-sm no-border"
+                   placeholder="Bird Name">
+
+            <button class="bird-btn-box" id="full-search-list">Full List</button>
+        </div>
+
+
+        <button id="show-list">
+            &times;
+        </button>
+        <div id="bird-list"></div>
+
+
+    </div>
+</div>
+

@@ -1,0 +1,132 @@
+@import "color";
+@import "utility";
+@import "component";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+
+}
+
+.navbar {
+  padding: 0;
+  font-size: .9rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0;
+  margin-top: 0;
+}
+
+article {
+  margin-top: 0;
+}
+
+.form-inline a {
+  padding: 0 10px;
+}
+
+// Body
+
+body {
+  font-family: $font-stack;
+  line-height: 1.6rem;
+  color: $charcoal-color;
+  width: 100vw;
+
+}
+
+p {
+  margin: .8rem 0;
+  color: $charcoal-color;
+}
+
+.card {
+  border: none;
+}
+
+
+label {
+  margin: 1rem 0 0;
+  padding: 0;
+  font-size: .9rem;
+  text-align: left;
+}
+
+.card-body {
+  padding: 0 1rem 1rem;
+}
+
+
+.btn-float {
+  float: left;
+  margin-right: 10px;
+}
+
+.btn-light {
+  background-color: rgba(46, 41, 78, .8);
+  font-size: .8rem;
+  font-weight: 500;
+  color: $baby-powder;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto 5px;
+
+}
+
+.right {
+  text-align: right;
+}
+
+.no-border {
+  border: 0;
+  box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+  height: 1.6rem;
+}
+
+
+.border-none {
+  border: 0;
+}
+
+.form-group {
+  margin-bottom: 0;
+}
+
+.base-color {
+  background-color: $base-color;
+  border: none;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: $secondary-color;
+  color: rgba(255, 255, 255, .6);
+  text-align: center;
+}
+
+
+
+
+
+
+

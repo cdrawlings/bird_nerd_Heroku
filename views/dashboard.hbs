@@ -1,0 +1,220 @@
+<div class="hide">
+    {{location.longitude}}
+    {{location.latitude}}
+    <h3 id="w-lon" class="wthr-cord">{{location.longitude}}</h3>
+    <h3 id="w-lat" class="wthr-cord">{{location.latitude}}</h3>
+</div>
+
+
+{{#if location}}
+
+    {{#if last}}
+
+        <table id="table" class="hide">
+            {{#each last}}
+                <tr>
+                    <td>{{bird.comName}}</td>
+                    <td>{{ count.count }}</td>
+                </tr>
+            {{/each}}
+        </table>
+
+    {{else}}
+
+
+
+    {{/if}}
+    <!-- if there is location information show Bird -->
+
+    <article class="article__top">
+
+        <section class="row dash__intro">
+            <div class="col-12">
+                <h3>Welcome back {{name}} </h3>
+            </div>
+        </section>
+
+        <section class="row dash__start justify-content-center">
+
+            <form action="start" method="POST" class="form-group">
+                <input type="hidden" id="tempature" aria-hidden="true" value="" name="tempature">
+                <input type="hidden" id="condition" aria-hidden="true" value="" name="condition">
+                <input type="hidden" id="local" aria-hidden="true" value="{{location._id}}" name="local">
+                <input class="btn__start" type="submit" value="Start a new session">
+            </form>
+
+        </section>
+
+        <section class="row dash__text">
+            <div class="col-12">
+                Bird watching conditions in {{location.location}} for <span id="birdTime"></span>
+            </div>
+        </section>
+
+        <section class="row dash__cond justify-content-center">
+
+            <div class="col-4">
+                <p class="weather__info">Tempature</p>
+                <div id="w-string" class="weather__info--temp"></div>
+            </div>
+
+            <div class="col-4">
+                <p class="weather__info">Condition</p>
+                <span id="w-desc"></span>
+            </div>
+
+        </section>
+    </article>
+
+
+    <article class="history">
+        <section class="row dash__history">
+
+
+            <p class="history__intro">Past veiwing sessions</p>
+
+
+            <div class="btn__row">
+                <!-- Button trigger modal -->
+                <div data-toggle="modal" data-target="#lastModal">
+                    <img class="modal-b" src="../images/Pie.svg">
+                </div>
+
+                <button type="button" class="btn__history" data-toggle="modal" data-target="#lastModal">
+                    Last session information
+                </button>
+
+                <!-- Button trigger modal -->
+                <div data-toggle="modal" data-target="#historyModal">
+                    <img class="modal-b" src="../images/line.svg">
+                </div>
+
+                <button type="button" class="btn__history" data-toggle="modal" data-target="#historyModal">
+                    Historical bird activity
+                </button>
+            </div>
+
+
+            <!-- Modal last sesssion-->
+            <div class="modal fade" id="lastModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Spotted last session</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            The information displayed in this chart is based on the entries made from your last session.
+                            <div id="chart"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Modal History -->
+                <div class="modal fade" id="historyModal" tabindex="-1" role="dialog"
+                     aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Historical bird viewing activity</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                The information displayed in this chart is static as a demonstration. THis information
+                                does
+                                not reflect the data entered.
+
+                                <div id="container" class="svg-container"></div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </article>
+
+
+    <article class="article__bird-List">
+
+
+        <a href="/birds/add_birds" class="row row__btn">
+            <button type="submit" class="btn__white">See a new bird?</button>
+        </a>
+
+        <p class="dash__bird--text">{{name}}'s birds</p>
+
+        <div class="spotted">
+
+            {{#if birds}}
+                <ul>
+                    {{#each birds}}
+                        <li class="spot-list">
+                            <div class="all-bird-list">
+                                <a href="https://ebird.org/species/{{speciesCode}}/us"
+                                   class="dash__bird-name">{{comName}}</a>
+                            </div>
+                        </li>
+                    {{/each}}
+                </ul>
+            {{else}}
+                <p class="dash__bird--starttext">You have not spotted any birds, lets get started</p>
+            {{/if}}
+        </div>
+
+        </section>
+    </article>
+
+{{else}}
+
+    <!-- if  there is NO location information get location -->
+
+    <form action="/add_location" method="POST" class="form-group location--form">
+        <div class="location location__get row">
+            <label for="latitude">Latitude</label>
+            <input id="latitude" value="" type="text" name="latitude" class="form-control">
+        </div>
+
+        <div class="location location__get row">
+            <label for="longitude">Longitude</label>
+            <input id="longitude" value="" type="text" name="longitude" class="form-control">
+        </div>
+
+        <div class="location location__get row">
+            <label for="locality">Your location will be listed as:</label>
+            <input id="locality" value="" type="text" name="location" class="form-control">
+        </div>
+
+        <div id="city-loc"></div>
+
+        <div class="location location__accept row justify-content-center">
+            <input type="submit" value="Accept" class="btn__bird-start">
+        </div>
+
+    </form>
+
+{{/if}}
+
+
+<script src="/js/weather.js"></script>
+<script src="/js/donut.js"></script>
+<script src="/js/ghost.js"></script>
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+<script src="/js/location.js"></script>
+<script src="/js/show_date.js"></script>
