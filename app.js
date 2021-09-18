@@ -13,7 +13,6 @@ const connectDB = require('./config/db');
 const dayjs = require('dayjs')
 
 
-app.use(express.static(path.join(__dirname, 'public')));
 
 // Load config
 dotenv.config({path: './config/config.env'});
@@ -36,6 +35,8 @@ app.use(express.json(
     }, {limit: '1mb'}
 ));
 
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Method override
 app.use(
