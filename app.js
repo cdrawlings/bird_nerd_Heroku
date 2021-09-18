@@ -13,7 +13,6 @@ const connectDB = require('./config/db');
 const dayjs = require('dayjs')
 
 
-
 // Load config
 dotenv.config({path: './config/config.env'});
 
@@ -35,8 +34,6 @@ app.use(express.json(
     }, {limit: '1mb'}
 ));
 
-
-app.use(express.static(path.join(__dirname, 'public')));
 
 // Method override
 app.use(
@@ -77,10 +74,11 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     store: new MongoStore({mongooseConnection: mongoose.connection}),
-    cookie: {
-        secure: false,
-        maxAge: 360000
-    }
+    cookie:
+        {
+            secure: false,
+            maxAge: 360000
+        }
 }));
 
 app.use(passport.initialize());
@@ -101,6 +99,7 @@ app.use(function (req, res, next) {
     next();
 })
 
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.use('/', require('./routes/index'));
