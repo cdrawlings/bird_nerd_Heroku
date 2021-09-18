@@ -25,9 +25,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="small fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="small fixes" />
     <list id="6fff1d82-b51f-4a18-8f6a-8a911a288d8d" name="Default Changelist" comment="uodated port" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -478,7 +476,7 @@
       <updated>1631907839776</updated>
       <workItem from="1631907839821" duration="120000" />
       <workItem from="1631907965431" duration="883000" />
-      <workItem from="1631973549223" duration="2812000" />
+      <workItem from="1631973549223" duration="3196000" />
     </task>
     <task id="LOCAL-00030" summary="New changelist">
       <created>1631908471727</created>
@@ -508,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631976301017</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="small fixes">
+      <created>1631976839176</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1631976839176</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
