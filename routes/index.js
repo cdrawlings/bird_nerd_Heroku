@@ -3,8 +3,8 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const passport = require('passport');
 const bcrypt = require('bcryptjs');
-const {ensureAuth, ensureGuest} = require('../middleware/auth')
 
+const {ensureAuth, ensureGuest} = require('../middleware/auth')
 const Location = require('../models/Location');
 const Watch = require('../models/WatchSession');
 const Bird = require('../models/Bird');
@@ -33,7 +33,7 @@ router.post('/login', ensureGuest, (req, res, next) => {
         successRedirect: '/dashboard',
         failureRedirect: '/login',
         failureFlash: true
-    })(req, res, next);
+    }); //(req, res, next);
 });
 
 // @desc    Gets the users location
