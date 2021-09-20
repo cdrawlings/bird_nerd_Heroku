@@ -360,24 +360,28 @@ $gradient-radial: radial-gradient(#343330ff, #45462aff, #809848ff, #014750ff);
 }
 
 .login-bckgrnd {
-  position: fixed;
-  background: #8f000eff;
-  width: 100%;
-  height: 100vh;
-  z-index: 0;
-  top: 0;
-  left: 0;
+    position: fixed;
+    background: #8f000eff;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+.bird__login {
+    margin-top: 2vh;
 }
 
 .form__login {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .reg__headline {
-  margin: 5vh 0 0;
-  color: #2e294eff;
-  font-size: 1.3rem;
+    margin: 5vh 0 0;
+    color: #2e294eff;
+    font-size: 1.3rem;
   justify-self: center;
   text-align: center;
 }
