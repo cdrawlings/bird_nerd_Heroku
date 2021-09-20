@@ -152,8 +152,7 @@ router.post('/add_bird_session/:id', ensureAuth, flash, async (req, res) => {
             done(null, bird)
         }
     }
-    ccatch(err)
-    {
+    catch (err) {
         if (err.name === 'MongoError' && err.code === 11000) {
             req.flash('error', 'You have already spotted that bird')
             res.render('birds/add_birds',
