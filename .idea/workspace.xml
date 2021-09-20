@@ -25,14 +25,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="update Google OAuth">
+    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="Small changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scss/_component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/_component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/dashboard.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/dashboard.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/register.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/register.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/birds.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/birds.js" afterDir="false" />
     </list>
     <list id="6fff1d82-b51f-4a18-8f6a-8a911a288d8d" name="Default Changelist" comment="uodated port" />
     <option name="SHOW_DIALOG" value="false" />
@@ -485,7 +483,9 @@
       <workItem from="1631907839821" duration="120000" />
       <workItem from="1631907965431" duration="883000" />
       <workItem from="1631973549223" duration="5182000" />
-      <workItem from="1632149998906" duration="1316000" />
+      <workItem from="1632149998906" duration="1766000" />
+      <workItem from="1632155015874" duration="82000" />
+      <workItem from="1632155326769" duration="705000" />
     </task>
     <task id="LOCAL-00030" summary="New changelist">
       <created>1631908471727</created>
@@ -536,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632150505434</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Small changes">
+      <created>1632151954365</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1632151954365</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -562,7 +569,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Ad bird from session working" />
     <MESSAGE value="dashboard css and clean up" />
     <MESSAGE value="dashboard and session page updated for CSS now last session getting all items last session fixing" />
     <MESSAGE value="Dashboard fixed, Last birds seen fixed to know only get last session. Session Pages need updating as well as add bired seesion.`" />
@@ -587,7 +593,8 @@
     <MESSAGE value="updated cookie seesion length" />
     <MESSAGE value="small fixes" />
     <MESSAGE value="update Google OAuth" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Google OAuth" />
+    <MESSAGE value="Small changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small changes" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

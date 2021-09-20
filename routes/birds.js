@@ -92,8 +92,6 @@ router.get('/session/:id', ensureAuth, async (req, res) => {
 // @desc    Process add form adding birds to spotted
 // @route   POST /birds
 router.post('/add_birds', ensureAuth, flash, async (req, res) => {
-    const birds = await Bird.find({user: req.user.id}).lean()
-    const location = await Location.findOne({user: req.user.id}).lean();
     try {
         req.body.user = req.user.id
         await Bird.create(req.body)
@@ -105,7 +103,6 @@ router.post('/add_birds', ensureAuth, flash, async (req, res) => {
                 {
                     messages: req.flash('error'),
                     name: req.user.firstName,
-                    location,
                     birds
                 });
 
@@ -137,8 +134,6 @@ router.get('/add_bird_session/:id', ensureAuth, flash, async (req, res) => {
 // @desc    Process add form adding birds to spotted
 // @route   POST /birds/add_bird_session
 router.post('/add_bird_session/:id', ensureAuth, flash, async (req, res) => {
-    const birds = await Bird.find({user: req.user.id}).lean()
-    const location = await Location.findOne({user: req.user.id}).lean();
     const newBird = {
         comName: req.body.comName,
         speciesCode: req.body.speciesCode,
@@ -149,9 +144,16 @@ router.post('/add_bird_session/:id', ensureAuth, flash, async (req, res) => {
         }
     }
     try {
-        bird = await Bird.create(newBird)
-        res.redirect('/birds/session/' + req.params.id)
-    } catch (err) {
+        let bird = await Bird.findOne({id: req.body.id})
+        if (bird) {
+            done(null, bird)
+        } else {
+            bird = await Bird.create(newBird)
+            done(null, bird)
+        }
+    }
+    ccatch(err)
+    {
         if (err.name === 'MongoError' && err.code === 11000) {
             req.flash('error', 'You have already spotted that bird')
             res.render('birds/add_birds',
