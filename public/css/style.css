@@ -360,30 +360,30 @@ $gradient-radial: radial-gradient(#343330ff, #45462aff, #809848ff, #014750ff);
 }
 
 .login-bckgrnd {
-    position: fixed;
-    background: #8f000eff;
-    width: 100%;
-    height: 100vh;
-    z-index: 0;
-    top: 0;
-    left: 0;
+  position: fixed;
+  background: #8f000eff;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  top: 0;
+  left: 0;
 }
 
 .bird__login {
-    margin-top: 2vh;
+  margin-top: 2vh;
 }
 
 .form__login {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .reg__headline {
-    margin: 5vh 0 0;
-    color: #2e294eff;
-    font-size: 1.3rem;
-    justify-self: center;
-    text-align: center;
+  margin: 5vh 0 0;
+  color: #2e294eff;
+  font-size: 1.3rem;
+  justify-self: center;
+  text-align: center;
 }
 
 .reg {
@@ -775,21 +775,21 @@ hr {
 }
 
 .dup_message {
-    padding-top: 4vh;
-    margin: 0 auto;
-    width: 70%;
+  padding-top: 4vh;
+  margin: 0 auto;
+  width: 70%;
 }
 
 .message-error {
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 1rem 4rem;
-    background-color: #8f000eff;
-    border-radius: 10px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 4rem;
+  background-color: #8f000eff;
+  border-radius: 10px;
 }
 
 .fa-plus-circle {
