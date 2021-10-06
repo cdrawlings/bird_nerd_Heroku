@@ -822,14 +822,16 @@ hr {
 
 .dup_message {
   padding-top: 4vh;
+  margin: 0 auto;
+  width: 70%
 }
 
 .message-error {
   margin: 0 auto;
-  width: 40%;
+  width: 100%;
   text-align: center;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: 1rem 4rem;
   background-color: $primary-color;

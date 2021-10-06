@@ -27,6 +27,15 @@
   <component name="ChangeListManager">
     <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="fixed typo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/passport.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Bird.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Bird.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/_component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/birds.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/birds.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/birds/add_birds.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/birds/add_birds.hbs" afterDir="false" />
     </list>
     <list id="6fff1d82-b51f-4a18-8f6a-8a911a288d8d" name="Default Changelist" comment="uodated port" />
     <option name="SHOW_DIALOG" value="false" />
@@ -482,6 +491,10 @@
       <workItem from="1632149998906" duration="1766000" />
       <workItem from="1632155015874" duration="82000" />
       <workItem from="1632155326769" duration="1391000" />
+      <workItem from="1632234835279" duration="2065000" />
+      <workItem from="1632923212051" duration="2309000" />
+      <workItem from="1633448043667" duration="9842000" />
+      <workItem from="1633532461969" duration="221000" />
     </task>
     <task id="LOCAL-00030" summary="New changelist">
       <created>1631908471727</created>
@@ -553,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632163063444</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="fixed typo">
+      <created>1632234906428</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1632234906428</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>

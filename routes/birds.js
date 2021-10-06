@@ -23,9 +23,10 @@ router.get('/', ensureAuth, async (req, res) => {
 // @Desc    type to get list of birds
 // @route   GET/birds/add_birds
 router.get('/add_birds', ensureAuth, flash, async (req, res) => {
+    const birds = await Bird.find({user: req.user.id}).lean()
+    console.log("Birds: ", birds)
+    const location = await Location.findOne({user: req.user.id}).lean()
     try {
-        const birds = await Bird.find({user: req.user.id}).lean()
-        const location = await Location.findOne({user: req.user.id}).lean()
         res.render('birds/add_birds', {
             name: req.user.firstName,
             location,
@@ -37,6 +38,35 @@ router.get('/add_birds', ensureAuth, flash, async (req, res) => {
     }
 });
 
+// @desc    Process add form adding birds to spotted
+// @route   POST /birds
+router.post('/add_birds', ensureAuth, flash, async (req, res) => {
+    const birds = await Bird.find({user: req.user.id}).lean()
+    const location = await Location.findOne({user: req.user.id}).lean();
+
+    try {
+        req.body.user = req.user.id
+        await Bird.create(req.body)
+        res.redirect('/birds/add_birds')
+        console.log("Bird added: ", req.body)
+        console.log("species code added: ", req.body.speciesCode)
+        console.log("user ID: ", req.user.id)
+    } catch (err) {
+        if (err.name === 'MongoError' && err.code === 11000) {
+            req.flash('error', 'You have already spotted that bird')
+            res.render('birds/add_birds',
+                {
+                    messages: req.flash('error'),
+                    name: req.user.firstName,
+                    location,
+                    birds
+                });
+        } else {
+            console.error(err)
+            res.render('errors/500')
+        }
+    }
+});
 
 
 // @Desc    page to register birds during a watching session
@@ -95,30 +125,6 @@ router.get('/session/:id', ensureAuth, async (req, res) => {
 })
 
 
-// @desc    Process add form adding birds to spotted
-// @route   POST /birds
-router.post('/add_bird', ensureAuth, flash, async (req, res) => {
-    try {
-        req.body.user = req.user.id
-        await Bird.create(req.body)
-        res.redirect('/birds/add_birds')
-    } catch (err) {
-        if (err.name === 'MongoError' && err.code === 11000) {
-            req.session.message = {
-                type: 'danger',
-                intro: 'Duplicate',
-                message: 'This bird has already been added to your list.'
-            }
-            res.render('/birds/add_birds',
-                {birds})
-        } else {
-            console.error(err)
-            res.render('errors/500')
-        }
-    }
-});
-
-
 // @desc    add birds to the spotte list from with in the watch sesssion
 // @route   POST /birds
 router.get('/add_bird_session/:id', ensureAuth, flash, async (req, res) => {
@@ -138,7 +144,7 @@ router.get('/add_bird_session/:id', ensureAuth, flash, async (req, res) => {
 
 // @desc    Process add form adding birds to spotted
 // @route   POST /birds/add_bird_session
-router.post('/add_bird_session/:id', ensureAuth, flash, async (req, res) => {
+router.post('/add_bird_session/:id', ensureAuth, flash, async (req, res, done) => {
     const newBird = {
         comName: req.body.comName,
         speciesCode: req.body.speciesCode,
@@ -148,20 +154,24 @@ router.post('/add_bird_session/:id', ensureAuth, flash, async (req, res) => {
             watchSession: req.params.id
         }
     }
+    console.log("new bird: ", newBird)
     try {
-        let bird = await Bird.findOne({id: req.body.id})
-
-        if (bird) {
-            done(null, bird)
-        } else {
-            bird = await Bird.create(newBird)
-            done(null, bird)
-        }
+        await Bird.create(newBird)
+        res.redirect('/birds/session/' + req.params.id)
     } catch (err) {
-        console.error(err)
+        if (err.name === 'MongoError' && err.code === 11000) {
+            req.session.message = {
+                type: 'danger',
+                intro: 'Duplicate',
+                message: 'This bird has already been added to your list.'
+            }
+            res.render('/birds/add_birds',
+                {birds})
+        } else {
+            console.error(err)
+            res.render('errors/500')
+        }
     }
-
-    res.redirect('/birds/session/' + req.params.id)
 });
 
 
@@ -229,3 +239,39 @@ router.put('/create/:id', ensureAuth, async (req, res) => {
 });
 
 module.exports = router
+
+/*  OLD ADD BIRD ROUTE
+
+
+// @desc    Process add form adding birds to spotted
+// @route   POST /birds
+router.post('/add_birds', ensureAuth, flash, async (req, res) => {
+    const birds = await Bird.find({user: req.user.id}).lean()
+    const location = await Location.findOne({user: req.user.id}).lean();
+    try {
+        req.body.user = req.user.id
+        if ()
+        await Bird.create(req.body)
+        res.redirect('/birds/add_birds')
+        console.log("Bird added: ", req.body )
+        console.log("species code added: ", req.body.speciesCode )
+        console.log("user ID: ", req.user.id )
+    } catch (err) {
+        if (err.name === 'MongoError' && err.code === 11000) {
+            req.flash('error', 'You have already spotted that bird')
+            res.render('birds/add_birds',
+                {
+                    messages: req.flash('error'),
+                    name: req.user.firstName,
+                    location,
+                    birds
+                });
+
+        } else {
+            console.error(err)
+            res.render('errors/500')
+        }
+    }
+});
+
+ */
