@@ -4,6 +4,7 @@ const router = express.Router();
 const {ensureAuth} = require('../middleware/auth');
 const {flash} = require('../middleware/flash');
 
+const User = require('../models/User');
 const Location = require('../models/Location');
 const Bird = require('../models/Bird');
 const Watch = require('../models/WatchSession');
@@ -23,9 +24,11 @@ router.get('/', ensureAuth, async (req, res) => {
 // @Desc    type to get list of birds
 // @route   GET/birds/add_birds
 router.get('/add_birds', ensureAuth, flash, async (req, res) => {
-    const birds = await Bird.find({user: req.user.id}).lean()
-    console.log("Birds: ", birds)
+    const birds = await User.find({_id: req.user.id}).lean()
+    console.log("user: ", req.user.id)
     const location = await Location.findOne({user: req.user.id}).lean()
+    console.log("Birds: ", birds)
+    console.log("location: ", location)
     try {
         res.render('birds/add_birds', {
             name: req.user.firstName,
@@ -41,12 +44,22 @@ router.get('/add_birds', ensureAuth, flash, async (req, res) => {
 // @desc    Process add form adding birds to spotted
 // @route   POST /birds
 router.post('/add_birds', ensureAuth, flash, async (req, res) => {
-    const birds = await Bird.find({user: req.user.id}).lean()
     const location = await Location.findOne({user: req.user.id}).lean();
-
+    const bird = {
+        comName: req.body.comName,
+        speciesCode: req.body.speciesCode,
+    }
     try {
-        req.body.user = req.user.id
-        await Bird.create(req.body)
+        console.log("user ID: ", req.user.id)
+        console.log("bird ID: ", req.body.speciesCode)
+        await User.findOneAndUpdate(
+            {_id: req.user.id},
+            {
+                $push: {bird: bird}
+            }, {
+                new: true,
+                upsert: true
+            })
         res.redirect('/birds/add_birds')
         console.log("Bird added: ", req.body)
         console.log("species code added: ", req.body.speciesCode)
@@ -59,7 +72,7 @@ router.post('/add_birds', ensureAuth, flash, async (req, res) => {
                     messages: req.flash('error'),
                     name: req.user.firstName,
                     location,
-                    birds
+
                 });
         } else {
             console.error(err)
