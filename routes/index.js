@@ -115,7 +115,11 @@ router.get('/dashboard', ensureAuth, async (req, res) => {
     try {
         const location = await Location.findOne({user: req.user.id}).lean();
         const session = await Watch.findById(req.params.id).lean()
-        const birds = await Bird.find({user: req.user.id}).lean()
+        const birds = await User.aggregate([
+            {$project: {_id: 1, bird: 1, comName: 1, speciesCode: 1, firstName: 1, lastName: 1}},
+            {$match: {_id: idUser}},
+            {$unwind: '$bird'},
+        ]);
 
         const last = await Watch.aggregate([
             {$match: {user: idUser}},
@@ -172,7 +176,8 @@ router.get('/chart', ensureAuth, async (req, res) => {
 
         const birds = await Bird.aggregate([
             {$match: {user: idUser}},
-            {$project: {_id: 1, user: 1, comName: 1, 'count': 1, 'startTime': 1}},
+            {$project: {_id: 1, user: 1, comName: 1, 'count': 1, 'startTime': 1, bird: 1}},
+            {$unwind: '$bird'},
             {$unwind: '$count'},
             {
                 $lookup: {

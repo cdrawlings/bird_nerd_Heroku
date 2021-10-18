@@ -25,11 +25,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="`got everything working again, upto the the Bird model needs to be added to the user Model">
+    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment=" updating each users bird list seperatly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Bird.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Bird.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Count.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/WatchSession.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/WatchSession.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/birds.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/birds.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/stories.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/birds/add_birds.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/birds/add_birds.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/birds/session.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/birds/session.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/dashboard.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/dashboard.hbs" afterDir="false" />
     </list>
     <list id="6fff1d82-b51f-4a18-8f6a-8a911a288d8d" name="Default Changelist" comment="uodated port" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +62,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1h3W2Z3GYBL3zEHFbF3WJs64Ssw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -491,7 +500,12 @@
       <workItem from="1633532461969" duration="589000" />
       <workItem from="1633547538565" duration="1952000" />
       <workItem from="1633617037151" duration="11114000" />
-      <workItem from="1633959806184" duration="3756000" />
+      <workItem from="1633959806184" duration="21985000" />
+      <workItem from="1634155915460" duration="1589000" />
+      <workItem from="1634220294024" duration="116000" />
+      <workItem from="1634220548909" duration="5701000" />
+      <workItem from="1634499939940" duration="749000" />
+      <workItem from="1634575197078" duration="4831000" />
     </task>
     <task id="LOCAL-00030" summary="New changelist">
       <created>1631908471727</created>
@@ -584,7 +598,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633532991376</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary=" updating each users bird list seperatly">
+      <created>1633966132376</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1633966132376</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -610,7 +631,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="All functions done xcept seen bird fro all bird list" />
     <MESSAGE value="about to transfer" />
     <MESSAGE value="mpbile css done" />
     <MESSAGE value="mpbile css done session" />
@@ -635,7 +655,8 @@
     <MESSAGE value="fixing add bird" />
     <MESSAGE value="fixed typo" />
     <MESSAGE value="`got everything working again, upto the the Bird model needs to be added to the user Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="`got everything working again, upto the the Bird model needs to be added to the user Model" />
+    <MESSAGE value=" updating each users bird list seperatly" />
+    <option name="LAST_COMMIT_MESSAGE" value=" updating each users bird list seperatly" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -4,9 +4,11 @@ const CountSchema = new mongoose.Schema({
     count: {
         type: Number,
     },
-    bird: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Bird'
+    comName: {
+        type: String,
+    },
+    speciesCode: {
+        type: String,
     }
 })
 

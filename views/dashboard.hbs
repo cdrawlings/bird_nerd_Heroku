@@ -10,7 +10,7 @@
 
     {{#if last}}
 
-        <table id="table" class="hide">
+        <table id="table"> <!-- class="hide" -->
             {{#each last}}
                 <tr>
                     <td>{{bird.comName}}</td>
@@ -167,8 +167,8 @@
                     {{#each birds}}
                         <li class="spot-list">
                             <div class="all-bird-list">
-                                <a href="https://ebird.org/species/{{speciesCode}}/us"
-                                   class="dash__bird-name">{{comName}}</a>
+                                <a href="https://ebird.org/species/{{bird.speciesCode}}/us"
+                                   class="dash__bird-name">{{bird.comName}}</a>
                             </div>
                         </li>
                     {{/each}}
