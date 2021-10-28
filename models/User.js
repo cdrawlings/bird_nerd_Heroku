@@ -1,12 +1,13 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const uniqueValidator = require('mongoose-unique-validator');
 
 const BirdSchema = new mongoose.Schema({
     comName: {
         type: String,
+
     },
     speciesCode: {
         type: String,
-        unique: true
     },
     firstSpotted: {
         type: Date,
@@ -46,5 +47,7 @@ const UserSchema = new mongoose.Schema({
     },
     bird: [BirdSchema]
 })
+
+UserSchema.plugin(uniqueValidator);
 
 module.exports = mongoose.model('User', UserSchema)

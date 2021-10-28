@@ -28,14 +28,42 @@
     <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment=" updating each users bird list seperatly">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Count.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/WatchSession.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/WatchSession.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-align/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ansi-align/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-align/node_modules/string-width/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-align/node_modules/string-width/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-align/node_modules/string-width/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-align/node_modules/string-width/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-align/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ansi-align/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-regex/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-regex/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-regex/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-regex/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/emoji-regex/LICENSE-MIT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/emoji-regex/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/emoji-regex/es2015/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/emoji-regex/es2015/text.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/emoji-regex/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/emoji-regex/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/emoji-regex/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/emoji-regex/text.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/is-fullwidth-code-point/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/is-fullwidth-code-point/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/is-fullwidth-code-point/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/is-fullwidth-code-point/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-oauth2/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/passport-oauth2/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-oauth2/lib/strategy.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/passport-oauth2/lib/strategy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/passport-oauth2/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/passport-oauth2/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/strip-ansi/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/strip-ansi/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/strip-ansi/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/strip-ansi/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/strip-ansi/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/birds.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/birds.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/stories.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/birds/add_birds.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/birds/add_birds.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/birds/session.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/birds/session.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/dashboard.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/dashboard.hbs" afterDir="false" />
     </list>
     <list id="6fff1d82-b51f-4a18-8f6a-8a911a288d8d" name="Default Changelist" comment="uodated port" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,9 +91,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
   <component name="ProjectId" id="1h3W2Z3GYBL3zEHFbF3WJs64Ssw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -76,8 +101,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mongo" />
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.2" />
@@ -506,6 +533,15 @@
       <workItem from="1634220548909" duration="5701000" />
       <workItem from="1634499939940" duration="749000" />
       <workItem from="1634575197078" duration="4831000" />
+      <workItem from="1634926754067" duration="4396000" />
+      <workItem from="1635262874738" duration="202000" />
+      <workItem from="1635264284404" duration="212000" />
+      <workItem from="1635280467517" duration="200000" />
+      <workItem from="1635280769641" duration="9000" />
+      <workItem from="1635281615472" duration="51000" />
+      <workItem from="1635340048902" duration="971000" />
+      <workItem from="1635346040021" duration="9184000" />
+      <workItem from="1635432090329" duration="2016000" />
     </task>
     <task id="LOCAL-00030" summary="New changelist">
       <created>1631908471727</created>
@@ -660,6 +696,17 @@
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/routes/birds.js</url>
+          <line>81</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

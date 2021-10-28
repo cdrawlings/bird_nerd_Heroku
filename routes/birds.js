@@ -14,6 +14,7 @@ const {config} = require("dotenv");
 // @Desc    Login/Landing Page
 // @route   GET/
 router.get('/', ensureAuth, async (req, res) => {
+    let idUser = mongoose.Types.ObjectId(req.user.id)
     const birds = await User.aggregate([
         {$project: {_id: 1, bird: 1, comName: 1, speciesCode: 1, firstName: 1, lastName: 1}},
         {$match: {_id: idUser}},
@@ -52,29 +53,36 @@ router.get('/add_birds', ensureAuth, flash, async (req, res) => {
     }
 });
 
+
 // @desc    Process add form adding birds to spotted
 // @route   POST /birds
 router.post('/add_birds', ensureAuth, flash, async (req, res) => {
+    const birds = await User.find({user: req.user.id}).lean()
     const location = await Location.findOne({user: req.user.id}).lean();
-    const bird = {
-        comName: req.body.comName,
-        speciesCode: req.body.speciesCode,
-    }
+    console.log("to be added:", req.body)
+
     try {
-        console.log("user ID: ", req.user.id)
-        console.log("bird ID: ", req.body.speciesCode)
-        await User.findOneAndUpdate(
-            {_id: req.user.id},
+        await User.updateOne(
             {
-                $push: {bird: bird}
-            }, {
-                new: true,
-                upsert: true
+                _id: req.user.id,
+                bird: {
+                    $not: {
+                        $elemMatch: {
+                            speciesCode: req.body.speciesCode
+                        }
+                    }
+                }
+            },
+            {
+                $addToSet: {
+                    bird: {
+                        comName: req.body.comName,
+                        speciesCode: req.body.speciesCode
+                    }
+                }
             })
-        res.redirect('/birds/add_birds')
-        console.log("Bird added: ", req.body)
-        console.log("species code added: ", req.body.speciesCode)
-        console.log("user ID: ", req.user.id)
+        console.log(birds)
+        res.redirect('/dashboard')
     } catch (err) {
         if (err.name === 'MongoError' && err.code === 11000) {
             req.flash('error', 'You have already spotted that bird')
@@ -83,16 +91,18 @@ router.post('/add_birds', ensureAuth, flash, async (req, res) => {
                     messages: req.flash('error'),
                     name: req.user.firstName,
                     location,
-
+                    birds
                 });
+
         } else {
             console.error(err)
-            res.render('errors/500')
+            res.render('errors/500');
         }
     }
 });
 
 
+/*
 // @Desc    page to register birds during a watching session
 // @route   GET/birds/session/:id
 router.get('/session/:id', ensureAuth, async (req, res) => {
@@ -112,15 +122,7 @@ router.get('/session/:id', ensureAuth, async (req, res) => {
             {$match: {user: idUser}},
             {$unwind: '$count'},
 
-            /*
-            {$lookup: {
-                from: "users",
-                localField: "count.bird",
-                foreignField: "_id",
-                as: "birds"
-                }},
-           {$unwind: '$birds'},
-           */
+
 
             {$match: {_id: idWatch}},
         ]);
@@ -150,7 +152,7 @@ router.get('/session/:id', ensureAuth, async (req, res) => {
         res.render('errors/404')
     }
 })
-
+*/
 
 // @desc    add birds to the spotte list from with in the watch sesssion
 // @route   POST /birds
@@ -183,7 +185,8 @@ router.post('/add_bird_session/:id', ensureAuth, flash, async (req, res) => {
     }
 
     try {
-        await Bird.create(newBird)
+        req.body.user = req.user.id
+        await User.create(newBird)
         res.redirect('/birds/session/' + req.params.id)
     } catch (err) {
         if (err.name === 'MongoError' && err.code === 11000) {
@@ -248,7 +251,6 @@ router.put('/update/:id', ensureAuth, async (req, res) => {
 router.put('/create/:id', ensureAuth, async (req, res) => {
     console.log("Create: ", req.body)
     const update = await Watch.findOneAndUpdate(
-
         {"_id": req.params.id},
         {
             $push: {
@@ -271,39 +273,3 @@ router.put('/create/:id', ensureAuth, async (req, res) => {
 });
 
 module.exports = router
-
-/*  OLD ADD BIRD ROUTE
-
-
-// @desc    Process add form adding birds to spotted
-// @route   POST /birds
-router.post('/add_birds', ensureAuth, flash, async (req, res) => {
-    const birds = await Bird.find({user: req.user.id}).lean()
-    const location = await Location.findOne({user: req.user.id}).lean();
-    try {
-        req.body.user = req.user.id
-        if ()
-        await Bird.create(req.body)
-        res.redirect('/birds/add_birds')
-        console.log("Bird added: ", req.body )
-        console.log("species code added: ", req.body.speciesCode )
-        console.log("user ID: ", req.user.id )
-    } catch (err) {
-        if (err.name === 'MongoError' && err.code === 11000) {
-            req.flash('error', 'You have already spotted that bird')
-            res.render('birds/add_birds',
-                {
-                    messages: req.flash('error'),
-                    name: req.user.firstName,
-                    location,
-                    birds
-                });
-
-        } else {
-            console.error(err)
-            res.render('errors/500')
-        }
-    }
-});
-
- */
