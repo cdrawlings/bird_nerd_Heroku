@@ -59,7 +59,6 @@ router.get('/add_birds', ensureAuth, flash, async (req, res) => {
 router.post('/add_birds', ensureAuth, flash, async (req, res) => {
     const birds = await User.find({user: req.user.id}).lean()
     const location = await Location.findOne({user: req.user.id}).lean();
-    console.log("to be added:", req.body)
 
     try {
         await User.updateOne(
@@ -81,7 +80,7 @@ router.post('/add_birds', ensureAuth, flash, async (req, res) => {
                     }
                 }
             })
-        console.log(birds)
+
         res.redirect('/dashboard')
     } catch (err) {
         if (err.name === 'MongoError' && err.code === 11000) {
@@ -102,7 +101,6 @@ router.post('/add_birds', ensureAuth, flash, async (req, res) => {
 });
 
 
-/*
 // @Desc    page to register birds during a watching session
 // @route   GET/birds/session/:id
 router.get('/session/:id', ensureAuth, async (req, res) => {
@@ -152,7 +150,7 @@ router.get('/session/:id', ensureAuth, async (req, res) => {
         res.render('errors/404')
     }
 })
-*/
+
 
 // @desc    add birds to the spotte list from with in the watch sesssion
 // @route   POST /birds
@@ -174,19 +172,29 @@ router.get('/add_bird_session/:id', ensureAuth, flash, async (req, res) => {
 // @desc    Process add form adding birds to spotted
 // @route   POST /birds/add_bird_session
 router.post('/add_bird_session/:id', ensureAuth, flash, async (req, res) => {
-    const newBird = {
-        comName: req.body.comName,
-        speciesCode: req.body.speciesCode,
-        user: req.user.id,
-        count: {
-            count: req.body.count,
-            watchSession: req.params.id
-        }
-    }
 
     try {
-        req.body.user = req.user.id
-        await User.create(newBird)
+        await User.updateOne(
+            {
+                _id: req.user.id,
+                bird: {
+                    $not: {
+                        $elemMatch: {
+                            speciesCode: req.body.speciesCode
+                        }
+                    }
+                }
+            },
+            {
+                $addToSet: {
+                    bird: {
+                        comName: req.body.comName,
+                        speciesCode: req.body.speciesCode
+                    }
+                }
+            })
+
+
         res.redirect('/birds/session/' + req.params.id)
     } catch (err) {
         if (err.name === 'MongoError' && err.code === 11000) {
