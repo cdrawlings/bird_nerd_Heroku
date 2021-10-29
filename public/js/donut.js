@@ -12,8 +12,8 @@ console.log(dataPie)
 
 // Data
 // set the dimensions and margins of the graph
-const widthPie = 450
-const heightPie = 450
+const widthPie = 300
+const heightPie = 300
 const marginPie = 40
 
 // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.

@@ -4,10 +4,10 @@ const uniqueValidator = require('mongoose-unique-validator');
 const BirdSchema = new mongoose.Schema({
     comName: {
         type: String,
-
     },
     speciesCode: {
         type: String,
+        unique: true
     },
     firstSpotted: {
         type: Date,

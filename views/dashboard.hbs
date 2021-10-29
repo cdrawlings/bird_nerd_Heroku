@@ -10,10 +10,10 @@
 
     {{#if last}}
 
-        <table id="table"> <!-- class="hide" -->
+        <table id="table" class="hide"> <!-- class="hide" -->
             {{#each last}}
                 <tr>
-                    <td>{{bird.comName}}</td>
+                    <td>{{count.comName}}</td>
                     <td>{{ count.count }}</td>
                 </tr>
             {{/each}}
@@ -77,21 +77,13 @@
             <div class="btn__row">
                 <!-- Button trigger modal -->
                 <div data-toggle="modal" data-target="#lastModal">
-                    <img class="modal-b" src="../images/Pie.svg">
+                    <img class="modal-b" src="../images/Pie.svg" alt="Pie chart showing birds seen last session">
                 </div>
 
                 <button type="button" class="btn__history" data-toggle="modal" data-target="#lastModal">
                     Last session information
                 </button>
 
-                <!-- Button trigger modal -->
-                <div data-toggle="modal" data-target="#historyModal">
-                    <img class="modal-b" src="../images/line.svg">
-                </div>
-
-                <button type="button" class="btn__history" data-toggle="modal" data-target="#historyModal">
-                    Historical bird activity
-                </button>
             </div>
 
 
@@ -113,34 +105,6 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Modal History -->
-                <div class="modal fade" id="historyModal" tabindex="-1" role="dialog"
-                     aria-labelledby="exampleModalLabel"
-                     aria-hidden="true">
-                    <div class="modal-dialog modal-xl" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Historical bird viewing activity</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                The information displayed in this chart is static as a demonstration. THis information
-                                does
-                                not reflect the data entered.
-
-                                <div id="container" class="svg-container"></div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -178,7 +142,7 @@
             {{/if}}
         </div>
 
-        </section>
+
     </article>
 
 {{else}}
@@ -197,7 +161,7 @@
         </div>
 
         <div class="location location__get row">
-            <label for="locality">Your location will be listed as:</label>
+            <label for="locality">Fetching your location:</label>
             <input id="locality" value="" type="text" name="location" class="form-control">
         </div>
 

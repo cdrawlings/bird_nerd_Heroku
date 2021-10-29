@@ -8,7 +8,6 @@ const User = require('../models/User');
 const Location = require('../models/Location');
 const Bird = require('../models/Bird');
 const Watch = require('../models/WatchSession');
-const {config} = require("dotenv");
 
 
 // @Desc    Login/Landing Page
@@ -26,6 +25,7 @@ router.get('/', ensureAuth, async (req, res) => {
         location
     })
 });
+
 
 // @Desc    type to get list of birds
 // @route   GET/birds/add_birds
@@ -59,7 +59,6 @@ router.get('/add_birds', ensureAuth, flash, async (req, res) => {
 router.post('/add_birds', ensureAuth, flash, async (req, res) => {
     const birds = await User.find({user: req.user.id}).lean()
     const location = await Location.findOne({user: req.user.id}).lean();
-
     try {
         await User.updateOne(
             {
@@ -71,16 +70,15 @@ router.post('/add_birds', ensureAuth, flash, async (req, res) => {
                         }
                     }
                 }
-            },
-            {
+            }, {
                 $addToSet: {
                     bird: {
                         comName: req.body.comName,
                         speciesCode: req.body.speciesCode
                     }
                 }
-            })
-
+            }
+        )
         res.redirect('/dashboard')
     } catch (err) {
         if (err.name === 'MongoError' && err.code === 11000) {
@@ -193,8 +191,6 @@ router.post('/add_bird_session/:id', ensureAuth, flash, async (req, res) => {
                     }
                 }
             })
-
-
         res.redirect('/birds/session/' + req.params.id)
     } catch (err) {
         if (err.name === 'MongoError' && err.code === 11000) {

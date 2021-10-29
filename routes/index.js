@@ -127,16 +127,10 @@ router.get('/dashboard', ensureAuth, async (req, res) => {
             {$sort: {startTime: -1}},
             {$limit: 1},
             {$unwind: '$count'}, // All records for this user
-            {
-                $lookup: {
-                    from: "birds",
-                    localField: "count.bird",
-                    foreignField: "_id",
-                    as: "bird"
-                }
-            },
-            {$unwind: '$bird'},// All records including the seesion data for each entry
+
         ]);
+
+        console.log("last:", last)
 
         res.render('dashboard', {
             layout: "dash",
