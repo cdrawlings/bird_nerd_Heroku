@@ -18,6 +18,7 @@ router.get('/', ensureAuth, async (req, res) => {
         {$project: {_id: 1, bird: 1, comName: 1, speciesCode: 1, firstName: 1, lastName: 1}},
         {$match: {_id: idUser}},
         {$unwind: '$bird'},
+        {$sort: {"bird.comName": 1}},
     ]);
     const location = await Location.findOne({user: req.user.id}).lean();
     res.render('birds/index', {
@@ -35,6 +36,7 @@ router.get('/add_birds', ensureAuth, flash, async (req, res) => {
         {$project: {_id: 1, bird: 1, comName: 1, speciesCode: 1, firstName: 1, lastName: 1}},
         {$match: {_id: idUser}},
         {$unwind: '$bird'},
+        {$sort: {"bird.comName": 1}},
     ]);
 
     const location = await Location.findOne({user: req.user.id}).lean()
@@ -57,7 +59,7 @@ router.get('/add_birds', ensureAuth, flash, async (req, res) => {
 // @desc    Process add form adding birds to spotted
 // @route   POST /birds
 router.post('/add_birds', ensureAuth, flash, async (req, res) => {
-    const birds = await User.find({user: req.user.id}).lean()
+    const birds = await User.find({user: req.user.id}).lean();
     const location = await Location.findOne({user: req.user.id}).lean();
     try {
         await User.updateOne(
@@ -70,8 +72,8 @@ router.post('/add_birds', ensureAuth, flash, async (req, res) => {
                         }
                     }
                 }
-            }, {
-                $addToSet: {
+            }, { $addToSet:
+                    {
                     bird: {
                         comName: req.body.comName,
                         speciesCode: req.body.speciesCode
@@ -111,6 +113,7 @@ router.get('/session/:id', ensureAuth, async (req, res) => {
             {$project: {_id: 1, bird: 1, comName: 1, speciesCode: 1, firstName: 1, lastName: 1}},
             {$match: {_id: idUser}},
             {$unwind: '$bird'},
+            {$sort: {"bird.comName": 1}},
         ]);
 
         const seen = await Watch.aggregate([
@@ -121,6 +124,7 @@ router.get('/session/:id', ensureAuth, async (req, res) => {
 
 
             {$match: {_id: idWatch}},
+            {$sort: {"count.comName": 1}},
         ]);
 
         // console.log("Seen: ", seen)

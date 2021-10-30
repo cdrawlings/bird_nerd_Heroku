@@ -42,8 +42,8 @@ $gradient-bottom-left: linear-gradient(315deg, #343330ff, #45462aff, #809848ff, 
 $gradient-radial: radial-gradient(#343330ff, #45462aff, #809848ff, #014750ff);
 */
 .container {
-    width: 100vw;
-    min-height: 100%;
+  width: 100vw;
+  min-height: 100%;
 }
 
 .flex-column {
@@ -126,10 +126,10 @@ $gradient-radial: radial-gradient(#343330ff, #45462aff, #809848ff, #014750ff);
 }
 
 .btn, .btn__white, .btn__white--top, .btn__white--return, .btn__register, .btn__history, .btn__start, .btn__reset, .btn__search, .btn__google, .btn__data, .btn__login {
-    padding: 6px 10px;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 5px;
+  padding: 6px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
 }
 .btn__login {
   margin: 3vh auto 0;
@@ -204,19 +204,19 @@ $gradient-radial: radial-gradient(#343330ff, #45462aff, #809848ff, #014750ff);
 }
 
 .btn__history {
-    width: 250px;
-    margin: 0 5px 0;
-    border: 1px solid;
-    border-color: #081a21ff;
-    background-color: #2e294eff;
-    color: white;
-    font-size: 1rem;
-    line-height: 1rem;
+  width: 250px;
+  margin: 0 5px 0;
+  border: 1px solid;
+  border-color: #081a21ff;
+  background-color: #2e294eff;
+  color: white;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 .btn__history:hover {
-    background-color: #8f000eff;
-    border-color: #081a21ff;
-    color: #fff;
+  background-color: #8f000eff;
+  border-color: #081a21ff;
+  color: #fff;
 }
 
 .btn__register {
@@ -248,8 +248,8 @@ $gradient-radial: radial-gradient(#343330ff, #45462aff, #809848ff, #014750ff);
   text-align: center;
 }
 .btn__white:hover, .btn__white--top:hover, .btn__white--return:hover {
-    background-color: #2e294eff;
-    color: #fff;
+  background-color: #2e294eff;
+  color: #fff;
 }
 
 .btn__white--return {
@@ -529,12 +529,12 @@ $gradient-radial: radial-gradient(#343330ff, #45462aff, #809848ff, #014750ff);
 }
 
 .session__text--search {
-    margin: 3vh auto 1.5vh;
-    font-size: 1rem;
-    color: #2e294eff;
-    font-weight: 600;
-    text-align: center;
-    width: 100%;
+  margin: 3vh auto 1.5vh;
+  font-size: 1rem;
+  color: #2e294eff;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
 }
 
 .session__text--p {
@@ -914,33 +914,33 @@ hr {
 /* axis text */
 .axis text {
   fill: #2b2929;
-    font-family: Raleway, Helvetica, Arial, sans-serif;
-    font-size: 1.3rem;
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
 }
 
 /* LINE CHART */
 .line {
-    fill: none;
-    stroke: #d2d2d2;
+  fill: none;
+  stroke: #d2d2d2;
 }
 
 #chart {
-    margin: 0 auto;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .ghost-line {
-    fill: none;
-    stroke: #d2d2d2;
-    opacity: 0;
-    stroke-width: 10;
+  fill: none;
+  stroke: #d2d2d2;
+  opacity: 0;
+  stroke-width: 10;
 }
 
 .serie_label {
-    fill: #d2d2d2;
+  fill: #d2d2d2;
   font-family: Raleway, Helvetica, Arial, sans-serif;
   font-size: 80%;
 }
@@ -1016,19 +1016,19 @@ button:focus {
   }
 
   .btn__history {
-      width: 250px;
-      margin: 0 5px 0;
-      border: 1px solid;
-      border-color: #081a21ff;
-      background-color: #2e294eff;
-      color: white;
-      font-size: 1rem;
-      line-height: 1rem;
+    width: 250px;
+    margin: 0 5px 0;
+    border: 1px solid;
+    border-color: #081a21ff;
+    background-color: #2e294eff;
+    color: white;
+    font-size: 1rem;
+    line-height: 1rem;
   }
   .btn__history:hover {
-      border-color: #081a21ff;
-      background-color: #8f000eff;
-      color: #fff;
+    border-color: #081a21ff;
+    background-color: #8f000eff;
+    color: #fff;
   }
 
   .btn__start {

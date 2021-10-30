@@ -119,6 +119,8 @@ router.get('/dashboard', ensureAuth, async (req, res) => {
             {$project: {_id: 1, bird: 1, comName: 1, speciesCode: 1, firstName: 1, lastName: 1}},
             {$match: {_id: idUser}},
             {$unwind: '$bird'},
+            {$sort: {"bird.comName": 1}},
+
         ]);
 
         const last = await Watch.aggregate([
@@ -128,9 +130,10 @@ router.get('/dashboard', ensureAuth, async (req, res) => {
             {$limit: 1},
             {$unwind: '$count'}, // All records for this user
 
+
         ]);
 
-        console.log("last:", last)
+        console.log("Bird:", birds)
 
         res.render('dashboard', {
             layout: "dash",
