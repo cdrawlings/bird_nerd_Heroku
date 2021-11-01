@@ -201,13 +201,13 @@
   margin: 0 5px 0;
   border: 1px solid;
   border-color: $charcoal-color;
-  background-color: $secondary-color;
+  background-color: $primary-color;
   color: white;
   font-size: 1rem;
   line-height: 1rem;
 
   &:hover {
-    background-color: $primary-color;
+    background-color: $secondary-color;
     border-color: $charcoal-color;
     color: #fff;
   }
