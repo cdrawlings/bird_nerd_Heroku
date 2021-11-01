@@ -103,21 +103,29 @@ $gradient-radial: radial-gradient(#343330ff, #45462aff, #809848ff, #014750ff);
 .nav-bar-clr a:hover {
   color: red;
 }
+
 .nav-bar-clr a:active {
-  color: orange;
+    color: orange;
 }
 
 .brand-text {
-  font-size: 1rem;
-  font-weight: 900;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.reg_info {
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #999999;
 }
 
 .card__login {
-  width: 90vw;
-  margin: 4vh auto 0;
-  box-shadow: 0 0 15px 0 #000;
-  z-index: 2;
-  display: flex;
+    width: 90vw;
+    margin: 4vh auto 0;
+    box-shadow: 0 0 15px 0 #000;
+    z-index: 2;
+    display: flex;
 }
 
 .row__btn {

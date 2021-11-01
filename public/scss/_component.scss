@@ -82,6 +82,13 @@
   font-weight: 900;
 }
 
+.reg_info {
+  font-family: $font-stack;
+  font-size: .8rem;
+  line-height: 1rem;
+  color: #999999;
+}
+
 .card__login {
   width: 90vw;
   margin: 4vh auto 0;

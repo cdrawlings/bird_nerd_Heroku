@@ -25,11 +25,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="Question re: Error Message, but all else done">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HOLD/_comp_old.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HOLD/_components.scss" beforeDir="false" />
+    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="Updateed address and such for Heroku">
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/_component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/register.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/register.hbs" afterDir="false" />
     </list>
     <list id="6fff1d82-b51f-4a18-8f6a-8a911a288d8d" name="Default Changelist" comment="uodated port" />
     <option name="SHOW_DIALOG" value="false" />
@@ -516,7 +516,7 @@
       <workItem from="1635530361328" duration="5745000" />
       <workItem from="1635700633169" duration="1767000" />
       <workItem from="1635703699023" duration="381000" />
-      <workItem from="1635776697200" duration="270000" />
+      <workItem from="1635776697200" duration="881000" />
     </task>
     <task id="LOCAL-00030" summary="New changelist">
       <created>1631908471727</created>
@@ -637,7 +637,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635531565586</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Updateed address and such for Heroku">
+      <created>1635777119366</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1635777119366</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -666,7 +673,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Dashboaerd CSS DOne" />
     <MESSAGE value="Add birds just neef JS css updated" />
     <MESSAGE value="Add birds done" />
     <MESSAGE value="session updated" />
@@ -691,7 +697,8 @@
     <MESSAGE value="Add bird id now adding birds to individual users and not repating" />
     <MESSAGE value="Add bird to session is working no duplicates" />
     <MESSAGE value="Question re: Error Message, but all else done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Question re: Error Message, but all else done" />
+    <MESSAGE value="Updateed address and such for Heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updateed address and such for Heroku" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
