@@ -355,34 +355,34 @@ $gradient-radial: radial-gradient(#343330ff, #45462aff, #809848ff, #014750ff);
 }
 
 .sub-btn {
-    background-color: #yellow;
-    padding: 5px 7px;
-    border: 0;
-    font-size: 0.9rem;
-    margin-right: 20px;
+  background-color: #yellow;
+  padding: 5px 7px;
+  border: 0;
+  font-size: 0.9rem;
+  margin-right: 20px;
 }
 .sub-btn:hover {
-    background-color: #333;
-    padding: 5px 7px;
-    border: 0;
+  background-color: #333;
+  padding: 5px 7px;
+  border: 0;
 }
 
 .p_login {
-    color: #444;
-    font-size: 0.8rem;
-    font-family: Raleway, Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    margin: 0;
+  color: #888;
+  font-size: 0.8rem;
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
 }
 
 .login-bckgrnd {
-    position: fixed;
-    background: #8f000eff;
-    width: 100%;
-    height: 100vh;
-    z-index: 0;
-    top: 0;
-    left: 0;
+  position: fixed;
+  background: #8f000eff;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  top: 0;
+  left: 0;
 }
 
 .bird__login {
