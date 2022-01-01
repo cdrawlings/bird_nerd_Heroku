@@ -25,8 +25,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="Changed chart button color for consistency">
+    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="updated small points">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/scss/_component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/register.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/register.hbs" afterDir="false" />
     </list>
     <list id="6fff1d82-b51f-4a18-8f6a-8a911a288d8d" name="Default Changelist" comment="uodated port" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,8 +76,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JavaScript" />
-    <property name="javascript.nodejs.core.library.configured.version" value="12.18.2" />
-    <property name="javascript.nodejs.core.library.typings.version" value="12.20.36" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.13.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.11.17" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/views/layouts" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -276,13 +280,6 @@
       <workItem from="1631470594741" duration="46130000" />
       <workItem from="1631802207303" duration="1692000" />
       <workItem from="1631899981040" duration="5179000" />
-    </task>
-    <task id="LOCAL-00001" summary="Ready to change for bird nerd">
-      <created>1599404313855</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1599404313855</updated>
     </task>
     <task id="LOCAL-00002" summary="Modal updated">
       <created>1600875257690</created>
@@ -513,7 +510,8 @@
       <workItem from="1635530361328" duration="5745000" />
       <workItem from="1635700633169" duration="1767000" />
       <workItem from="1635703699023" duration="381000" />
-      <workItem from="1635776697200" duration="2070000" />
+      <workItem from="1635776697200" duration="2087000" />
+      <workItem from="1641052571604" duration="304000" />
     </task>
     <task id="LOCAL-00030" summary="New changelist">
       <created>1631908471727</created>
@@ -655,7 +653,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635777900678</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="updated small points">
+      <created>1635780593032</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1635780593032</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -675,7 +680,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -684,7 +688,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="session updated" />
     <MESSAGE value="Updating birds done" />
     <MESSAGE value="css done Nav bar done" />
     <MESSAGE value="css done Nav bar done 2" />
@@ -709,7 +712,8 @@
     <MESSAGE value="Updateed address and such for Heroku" />
     <MESSAGE value="Added text around setting password" />
     <MESSAGE value="Changed chart button color for consistency" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed chart button color for consistency" />
+    <MESSAGE value="updated small points" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated small points" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
