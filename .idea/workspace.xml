@@ -25,9 +25,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="removed Models">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="removed local host" />
     <list id="6fff1d82-b51f-4a18-8f6a-8a911a288d8d" name="Default Changelist" comment="uodated port" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,13 +278,6 @@
       <workItem from="1631802207303" duration="1692000" />
       <workItem from="1631899981040" duration="5179000" />
     </task>
-    <task id="LOCAL-00009" summary="Some CSS added, add bird finished">
-      <created>1603126599036</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1603126599036</updated>
-    </task>
     <task id="LOCAL-00010" summary="Adding bird count fuuly works">
       <created>1603387304789</created>
       <option name="number" value="00010" />
@@ -463,7 +454,7 @@
       <workItem from="1635776697200" duration="2087000" />
       <workItem from="1641052571604" duration="2008000" />
       <workItem from="1641139836876" duration="80000" />
-      <workItem from="1641143179659" duration="1163000" />
+      <workItem from="1641143179659" duration="1448000" />
     </task>
     <task id="LOCAL-00030" summary="New changelist">
       <created>1631908471727</created>
@@ -661,7 +652,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641143882773</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="removed local host">
+      <created>1641144900345</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1641144900345</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -689,7 +687,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="Update package.json for hroku" />
     <MESSAGE value="new port" />
     <MESSAGE value="updated Procfile" />
     <MESSAGE value="uodated package.json" />
@@ -714,7 +711,8 @@
     <MESSAGE value="small change" />
     <MESSAGE value="removed unique" />
     <MESSAGE value="removed Models" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed Models" />
+    <MESSAGE value="removed local host" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed local host" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
