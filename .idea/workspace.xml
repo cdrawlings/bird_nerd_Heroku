@@ -25,8 +25,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="small change">
+    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="removed unique">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/dashboard.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/dashboard.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/login.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/register.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/register.hbs" afterDir="false" />
@@ -283,13 +284,6 @@
       <workItem from="1631802207303" duration="1692000" />
       <workItem from="1631899981040" duration="5179000" />
     </task>
-    <task id="LOCAL-00006" summary="App working adding chart">
-      <created>1602350419606</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1602350419606</updated>
-    </task>
     <task id="LOCAL-00007" summary="adding second passport strategy">
       <created>1602681481477</created>
       <option name="number" value="00007" />
@@ -486,6 +480,7 @@
       <workItem from="1635703699023" duration="381000" />
       <workItem from="1635776697200" duration="2087000" />
       <workItem from="1641052571604" duration="2008000" />
+      <workItem from="1641139836876" duration="80000" />
     </task>
     <task id="LOCAL-00030" summary="New changelist">
       <created>1631908471727</created>
@@ -662,7 +657,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641054629107</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="removed unique">
+      <created>1641139909576</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1641139909577</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -690,7 +692,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="css done Nav bar done 2" />
     <MESSAGE value="ready to upload" />
     <MESSAGE value="Update package.json for hroku" />
     <MESSAGE value="new port" />
@@ -715,7 +716,8 @@
     <MESSAGE value="updated small points" />
     <MESSAGE value="Added login help" />
     <MESSAGE value="small change" />
-    <option name="LAST_COMMIT_MESSAGE" value="small change" />
+    <MESSAGE value="removed unique" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed unique" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
