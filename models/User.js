@@ -7,7 +7,6 @@ const BirdSchema = new mongoose.Schema({
     },
     speciesCode: {
         type: String,
-        unique: true
     },
     firstSpotted: {
         type: Date,
