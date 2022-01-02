@@ -26,11 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="removed unique">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/dashboard.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/dashboard.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/register.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/register.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Bird.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Story.js" beforeDir="false" />
     </list>
     <list id="6fff1d82-b51f-4a18-8f6a-8a911a288d8d" name="Default Changelist" comment="uodated port" />
     <option name="SHOW_DIALOG" value="false" />
@@ -284,13 +281,6 @@
       <workItem from="1631802207303" duration="1692000" />
       <workItem from="1631899981040" duration="5179000" />
     </task>
-    <task id="LOCAL-00007" summary="adding second passport strategy">
-      <created>1602681481477</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1602681481477</updated>
-    </task>
     <task id="LOCAL-00008" summary="local sign in added to log in process">
       <created>1602950638415</created>
       <option name="number" value="00008" />
@@ -481,6 +471,7 @@
       <workItem from="1635776697200" duration="2087000" />
       <workItem from="1641052571604" duration="2008000" />
       <workItem from="1641139836876" duration="80000" />
+      <workItem from="1641143179659" duration="531000" />
     </task>
     <task id="LOCAL-00030" summary="New changelist">
       <created>1631908471727</created>
@@ -664,7 +655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641139909577</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="removed unique">
+      <created>1641143188774</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1641143188774</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
