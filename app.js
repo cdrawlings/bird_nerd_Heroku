@@ -107,6 +107,6 @@ app.use('/', require('./routes/index'));
 app.use('/auth', require('./routes/auth'));
 app.use('/birds', require('./routes/birds'));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 app.listen(PORT, console.log(`Server running on port ${PORT}`));
