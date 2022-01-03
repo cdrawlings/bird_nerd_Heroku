@@ -25,7 +25,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="add local host" />
+    <list default="true" id="1cd6a451-555c-49b0-b04c-5f7a558e605c" name="New changelist" comment="Good">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    </list>
     <list id="6fff1d82-b51f-4a18-8f6a-8a911a288d8d" name="Default Changelist" comment="uodated port" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,13 +281,6 @@
       <workItem from="1631802207303" duration="1692000" />
       <workItem from="1631899981040" duration="5179000" />
     </task>
-    <task id="LOCAL-00012" summary="dashboard css and clean up">
-      <created>1611776526351</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1611776526352</updated>
-    </task>
     <task id="LOCAL-00013" summary="dashboard and session page updated for CSS now last session getting all items last session fixing">
       <created>1612025074337</created>
       <option name="number" value="00013" />
@@ -440,7 +436,8 @@
       <workItem from="1635776697200" duration="2087000" />
       <workItem from="1641052571604" duration="2008000" />
       <workItem from="1641139836876" duration="80000" />
-      <workItem from="1641143179659" duration="1792000" />
+      <workItem from="1641143179659" duration="2368000" />
+      <workItem from="1641223497604" duration="220000" />
     </task>
     <task id="LOCAL-00030" summary="New changelist">
       <created>1631908471727</created>
@@ -659,7 +656,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641145079917</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Good">
+      <created>1641145626380</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1641145626380</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <option name="trackContextForNewChangelist" value="true" />
     <servers />
   </component>
@@ -687,7 +691,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="updated Procfile" />
     <MESSAGE value="uodated package.json" />
     <MESSAGE value="uodated port" />
     <MESSAGE value="New changelist" />
@@ -712,7 +715,8 @@
     <MESSAGE value="removed Models" />
     <MESSAGE value="removed local host" />
     <MESSAGE value="add local host" />
-    <option name="LAST_COMMIT_MESSAGE" value="add local host" />
+    <MESSAGE value="Good" />
+    <option name="LAST_COMMIT_MESSAGE" value="Good" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
